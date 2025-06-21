@@ -1,6 +1,6 @@
 # Publishing to PyPI
 
-This document provides instructions for publishing the arxiv-search-mcp package to PyPI.
+This document provides instructions for publishing the arxiv-search-mcp-server package to PyPI.
 
 ## Prerequisites
 
@@ -63,7 +63,7 @@ make upload-test
 
 Then test installation from Test PyPI:
 ```bash
-pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ arxiv-search-mcp
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ arxiv-search-mcp-server
 ```
 
 ## Publishing to PyPI
@@ -82,7 +82,7 @@ After publishing:
 
 1. Test installation from PyPI:
 ```bash
-pip install arxiv-search-mcp
+pip install arxiv-search-mcp-server
 ```
 
 2. Test the CLI command:

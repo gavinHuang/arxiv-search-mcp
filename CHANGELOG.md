@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Initial release of arxiv-search-mcp
+- Initial release of arxiv-search-mcp-server
 - Search functionality for arXiv papers
 - Subject category filtering
 - Date range filtering

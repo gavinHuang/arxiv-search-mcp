@@ -22,11 +22,11 @@ format:  ## Format code
 	black src/ tests/
 
 clean:  ## Clean build artifacts
-	rm -rf build/
-	rm -rf dist/
-	rm -rf *.egg-info/
-	find . -type d -name __pycache__ -exec rm -rf {} +
-	find . -type f -name "*.pyc" -delete
+	if (Test-Path build) { Remove-Item -Recurse -Force build }
+	if (Test-Path dist) { Remove-Item -Recurse -Force dist }
+	if (Test-Path "src/*.egg-info") { Remove-Item -Recurse -Force src/*.egg-info }
+	Get-ChildItem -Path . -Recurse -Name __pycache__ | Remove-Item -Recurse -Force
+	Get-ChildItem -Path . -Recurse -Name "*.pyc" | Remove-Item -Force
 
 build:  ## Build the package
 	python -m build

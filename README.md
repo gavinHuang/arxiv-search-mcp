@@ -1,7 +1,7 @@
 # arXiv Search MCP Server
 
-[![PyPI version](https://badge.fury.io/py/arxiv-search-mcp.svg)](https://badge.fury.io/py/arxiv-search-mcp)
-[![Python Support](https://img.shields.io/pypi/pyversions/arxiv-search-mcp.svg)](https://pypi.org/project/arxiv-search-mcp/)
+[![PyPI version](https://badge.fury.io/py/arxiv-search-mcp-server.svg)](https://badge.fury.io/py/arxiv-search-mcp-server)
+[![Python Support](https://img.shields.io/pypi/pyversions/arxiv-search-mcp-server.svg)](https://pypi.org/project/arxiv-search-mcp-server/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An MCP (Model Context Protocol) server that provides search functionality for arXiv.org papers using the official arXiv API.
@@ -20,7 +20,7 @@ An MCP (Model Context Protocol) server that provides search functionality for ar
 ### From PyPI (Recommended)
 
 ```bash
-pip install arxiv-search-mcp
+pip install arxiv-search-mcp-server
 ```
 
 ### From Source

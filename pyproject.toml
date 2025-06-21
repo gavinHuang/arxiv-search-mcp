@@ -3,8 +3,8 @@ requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "arxiv-search-mcp"
-version = "0.1.0"
+name = "arxiv-search-mcp-server"
+version = "0.1.2"
 description = "An MCP server that provides search functionality for arXiv.org papers"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -53,7 +53,7 @@ Repository = "https://github.com/gavinHuang/arxiv-search-mcp"
 "Bug Tracker" = "https://github.com/gavinHuang/arxiv-search-mcp/issues"
 
 [project.scripts]
-arxiv-search-mcp = "arxiv_search_mcp.server:main"
+arxiv-search-mcp-server = "arxiv_search_mcp_server.server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

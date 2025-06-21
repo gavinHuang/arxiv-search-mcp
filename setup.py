@@ -13,8 +13,8 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
-    name="arxiv-search-mcp",
-    version="0.1.0",
+    name="arxiv-search-mcp-server",
+    version="0.1.2",
     author="Gavin Huang",
     author_email="gavin@example.com",  # Replace with your actual email
     description="An MCP server that provides search functionality for arXiv.org papers",
@@ -54,10 +54,9 @@ setup(
             "flake8",
             "mypy",
         ],
-    },
-    entry_points={
+    },    entry_points={
         "console_scripts": [
-            "arxiv-search-mcp=arxiv_search_mcp.server:main",
+            "arxiv-search-mcp-server=arxiv_search_mcp_server.server:main",
         ],
     },
     include_package_data=True,
